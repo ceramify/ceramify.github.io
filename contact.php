@@ -3,14 +3,14 @@ $field_name = $_POST['name'];
 $field_email = $_POST['email'];
 $field_message = $_POST['message'];
 
-$mail_to = 'magenta+ceramifyweb@magentaceramics.com';
+$mail_to = 'mg+ceramifyweb@mg.com';
 $subject = 'Message from a site visitor '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
 $body_message .= 'E-mail: '.$field_email."\n";
 $body_message .= 'Message: '.$field_message;
 
-$headers .= "From: Ceramify_Form <infoweb@ceramify.com>\r\n";
+$headers .= "From: Ceramify_Form <infoweb@crmfy.com>\r\n";
 $headers .= 'Reply-To: '.$field_email."\r\n";
 
 $mail_status = mail($mail_to, $subject, $body_message, $headers);
